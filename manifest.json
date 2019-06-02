@@ -1,0 +1,13 @@
+{
+  "name": "Hello world",
+  "description": "Do you really need a description for that?",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["js/main.js"]
+    }
+  ],
+  "permissions": ["https://*.vk.com/*", "activeTab", "tabs", "webNavigation"]
+}
